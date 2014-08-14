@@ -1,10 +1,12 @@
-# mount point	fstype    device    	[device2]
+# Android fstab file.
+#<src>           <mnt_point>         <type>    <mnt_flags and options>                 <fs_mgr_flags>
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 
-/boot       mtd         boot
-/cache      yaffs2      cache
-/data       yaffs2      userdata
-/misc       mtd         misc
-/recovery   mtd         recovery
-/sdcard     vfat        /dev/block/mmcblk0p1        /dev/block/mmcblk0
-/system     yaffs2      system
-/sd-ext     ext4        /dev/block/mmcblk0p2
+/emmc@android     /system             ext4      ro,noatime                              wait
+/emmc@cache       /cache              ext4      noatime,nosuid,nodev,noauto_da_alloc    wait
+/emmc@usrdata     /data               ext4      noatime,nosuid,nodev,noauto_da_alloc    wait,encryptable=footer
+/dev/bootimg		/boot					  emmc		defaults                              	 defaults
+/dev/recovery		/recovery			  emmc		defaults                              	 defaults
+
+/dev/block/mmcblk1p1		/external_sd			vfat		defaults		defaults
