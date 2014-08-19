@@ -29,6 +29,11 @@ TARGET_PREBUILT_KERNEL := device/Coolpad/8297/kernel
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 
+#Make Recovery
+TOOLS_DIR := device/Coolpad/8297/tools
+RECOVERY_ROOT_DIR := out/target/product/8297/recovery/root
+BOARD_CUSTOM_BOOTIMG_MK := device/Coolpad/8297/mkbootimg.mk
+
 #Cwm Recovery
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"fontcn30_18x48.h\"
 BOARD_RECOVERY_MTK := true
