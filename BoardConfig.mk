@@ -39,8 +39,9 @@ RECOVERY_FSTAB_VERSION := 2
 
 #Cwm Recovery
 RECOVERY_VARIANT := cwm
-BOARD_USE_CUSTOM_RECOVERY_FONT := \"fontcn30_18x48.h\"
 BOARD_RECOVERY_MTK := true
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"fontcn30_18x48.h\"
+TARGET_RECOVERY_FSTAB := device/Coolpad/8297/cwm_recovery.fstab
 
 
 
