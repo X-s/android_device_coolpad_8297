@@ -35,5 +35,6 @@ RECOVERY_ROOT_DIR := out/target/product/8297/recovery/root
 BOARD_CUSTOM_BOOTIMG_MK := device/Coolpad/8297/mkbootimg.mk
 
 #Cwm Recovery
+RECOVERY_VARIANT := cwm
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"fontcn30_18x48.h\"
 BOARD_RECOVERY_MTK := true
