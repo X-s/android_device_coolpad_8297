@@ -1,7 +1,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/Coolpad/8297/BoardConfigVendor.mk
+-include vendor/coolpad/8297/BoardConfigVendor.mk
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -25,14 +25,14 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_PREBUILT_KERNEL := device/Coolpad/8297/kernel
+TARGET_PREBUILT_KERNEL := device/coolpad/8297/kernel
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 #Make Recovery
-TOOLS_DIR := device/Coolpad/8297/tools
+TOOLS_DIR := device/coolpad/8297/tools
 RECOVERY_ROOT_DIR := out/target/product/8297/recovery/root
-BOARD_CUSTOM_BOOTIMG_MK := device/Coolpad/8297/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/coolpad/8297/mkbootimg.mk
 
 #Common Recovery
 RECOVERY_FSTAB_VERSION := 2
@@ -41,10 +41,10 @@ RECOVERY_FSTAB_VERSION := 2
 RECOVERY_VARIANT := cwm
 BOARD_RECOVERY_MTK := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"fontcn30_18x48.h\"
-TARGET_RECOVERY_FSTAB := device/Coolpad/8297/cwm_recovery.fstab
+TARGET_RECOVERY_FSTAB := device/coolpad/8297/cwm_recovery.fstab
 
 
 
 #TWRP Recovery
-TARGET_RECOVERY_FSTAB := device/Coolpad/8297/twrp_recovery.fstab
+TARGET_RECOVERY_FSTAB := device/coolpad/8297/twrp_recovery.fstab
 DEVICE_RESOLUTION := 720x1280
